@@ -8,10 +8,11 @@ on:
 jobs:
   add-to-project:
     name: Issue and PR Automation
-    runs-on: ubuntu-latest
-    steps:
-      - name: Add to project
-        uses: actions/add-to-project@v2
-        with:
-          project-url: https://github.com/users/brobeson/projects/17
-          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+    uses: brobeson/IssueAutomation/.github/workflows/issue_automation.yaml@main
+    # runs-on: ubuntu-latest
+    # steps:
+    #   - name: Add to project
+    #     uses: actions/add-to-project@v2
+    #     with:
+    #       project-url: https://github.com/users/brobeson/projects/17
+    #       github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
