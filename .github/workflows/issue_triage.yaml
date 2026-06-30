@@ -11,6 +11,9 @@ jobs:
     uses: brobeson/IssueAutomation/.github/workflows/issue_automation.yaml@main
     secrets:
       personal_access_token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+    with:
+      project_owner: brobeson
+      project_id: 17
     # runs-on: ubuntu-latest
     # steps:
     #   - name: Add to project
